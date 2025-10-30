@@ -33,11 +33,10 @@ const Upload = () => {
         <main className="flex-1 px-4">
           <PageTitle>Upload Interest Rates</PageTitle>
           
-          <div className="flex flex-col items-center gap-6 mt-16">
+          <div className="flex items-center justify-center gap-4 mt-16">
             <Input
               type="file"
               onChange={handleFileChange}
-              className="max-w-md"
               accept=".csv,.xlsx,.xls"
             />
             
