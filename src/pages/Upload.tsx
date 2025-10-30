@@ -29,7 +29,7 @@ const Upload = () => {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Header />
-      <main className="flex-1 container mx-auto px-4 py-8">
+      <main className="flex-1 max-w-[1000px] mx-auto px-4 py-8 w-full">
         <PageTitle>Upload Interest Rates</PageTitle>
         
         <div className="flex flex-col items-center gap-6 mt-16">
