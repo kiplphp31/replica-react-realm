@@ -3,7 +3,7 @@ import logo from "@/assets/logo.png";
 
 const Header = () => {
   return (
-    <header className="bg-primary text-primary-foreground">
+    <header className="bg-primary text-primary-foreground rounded-t-lg border-b-[5px] border-secondary">
       <div className="px-4 py-4 flex items-center justify-between">
         <h1 className="text-xl md:text-2xl font-semibold">CAPSIL Interest Rates Interface</h1>
         <div className="flex flex-col items-center gap-2">
