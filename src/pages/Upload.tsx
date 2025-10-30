@@ -27,29 +27,31 @@ const Upload = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-background">
-      <Header />
-      <main className="flex-1 max-w-[1000px] mx-auto px-4 py-8 w-full">
-        <PageTitle>Upload Interest Rates</PageTitle>
-        
-        <div className="flex flex-col items-center gap-6 mt-16">
-          <Input
-            type="file"
-            onChange={handleFileChange}
-            className="max-w-md"
-            accept=".csv,.xlsx,.xls"
-          />
+    <div className="min-h-screen flex justify-center bg-background">
+      <div className="w-full max-w-[1000px] flex flex-col">
+        <Header />
+        <main className="flex-1 px-4 py-8">
+          <PageTitle>Upload Interest Rates</PageTitle>
           
-          <Button 
-            onClick={handleSubmit}
-            className="bg-accent hover:bg-accent/90 text-accent-foreground"
-            size="sm"
-          >
-            Send
-          </Button>
-        </div>
-      </main>
-      <Footer />
+          <div className="flex flex-col items-center gap-6 mt-16">
+            <Input
+              type="file"
+              onChange={handleFileChange}
+              className="max-w-md"
+              accept=".csv,.xlsx,.xls"
+            />
+            
+            <Button 
+              onClick={handleSubmit}
+              className="bg-accent hover:bg-accent/90 text-accent-foreground"
+              size="sm"
+            >
+              Send
+            </Button>
+          </div>
+        </main>
+        <Footer />
+      </div>
     </div>
   );
 };
